@@ -1,4 +1,5 @@
 fastapi
 uvicorn
-python-multipart
-httpx
+openai
+fastapi-clerk-auth
+pydantic
