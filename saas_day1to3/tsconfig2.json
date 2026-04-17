@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["../../../projects/saas_day1to3/next-env.d.ts", "../../../projects/saas_day1to3/**/*.ts", "../../../projects/saas_day1to3/**/*.tsx"],
+  "exclude": ["../../../projects/saas_day1to3/node_modules"]
+}
