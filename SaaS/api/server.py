@@ -45,7 +45,7 @@ Notes:
 {visit.notes}"""
 
 @app.post("/api/consultation")
-def consultation_summary(
+async def consultation_summary(
     visit: Visit,
     creds: HTTPAuthorizationCredentials = Depends(clerk_guard),
 ):
@@ -77,7 +77,7 @@ def consultation_summary(
     return StreamingResponse(event_stream(), media_type="text/event-stream")
 
 @app.get("/health")
-def health_check():
+async def health_check():
     """Health check endpoint for AWS App Runner"""
     return {"status": "healthy"}
 
